@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 522736753}
   - component: {fileID: 522736752}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: OptionsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -363,7 +363,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 522736753}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1862342616}
+        m_MethodName: ClickOnOptions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &522736753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,7 +424,7 @@ GameObject:
   - component: {fileID: 611336243}
   - component: {fileID: 611336242}
   m_Layer: 5
-  m_Name: Text
+  m_Name: QuitText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -492,7 +503,7 @@ GameObject:
   - component: {fileID: 927686467}
   - component: {fileID: 927686466}
   m_Layer: 5
-  m_Name: Button
+  m_Name: StartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -560,7 +571,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 927686467}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1862342616}
+        m_MethodName: ClickOnStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &927686467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,7 +703,7 @@ GameObject:
   - component: {fileID: 1318894459}
   - component: {fileID: 1318894458}
   m_Layer: 5
-  m_Name: Text
+  m_Name: StartText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -760,7 +782,7 @@ GameObject:
   - component: {fileID: 1522726424}
   - component: {fileID: 1522726423}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: QuitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -828,7 +850,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1522726424}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1862342616}
+        m_MethodName: ClickOnQuit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1522726424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -878,7 +911,7 @@ GameObject:
   - component: {fileID: 1590614438}
   - component: {fileID: 1590614437}
   m_Layer: 5
-  m_Name: Text
+  m_Name: OptionsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -956,6 +989,7 @@ GameObject:
   - component: {fileID: 1862342614}
   - component: {fileID: 1862342613}
   - component: {fileID: 1862342612}
+  - component: {fileID: 1862342616}
   m_Layer: 5
   m_Name: MainMenuCanvas
   m_TagString: Untagged
@@ -1043,6 +1077,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1862342616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862342611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82f381a35a2b5ec4c84ea93a5592c72c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1937710364
 GameObject:
   m_ObjectHideFlags: 0
