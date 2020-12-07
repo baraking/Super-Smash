@@ -12,8 +12,11 @@ public class Player : MonoBehaviour
     public Color playerColor;
 
     public bool isPlayerActivated;
+    public bool isPlayerReady;
 
     public Image cursor;
+
+    public Vector2 cursorLocation;
 
     private void Awake()
     {
