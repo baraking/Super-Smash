@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEngine.InputSystem.InputAction;
 
 public class Player : MonoBehaviour
 {
@@ -15,17 +16,24 @@ public class Player : MonoBehaviour
     public bool isPlayerReady;
 
     public Image cursor;
+    public CursorController cursorController;
 
     public Vector2 cursorLocation;
 
     private void Awake()
     {
         cursor.color = playerColor;
+        cursorController = cursor.GetComponent<CursorController>();
     }
 
     public void UpdatePlayerColor()
     {
         cursor.color = playerColor;
+    }
+
+    public void MenuMovement(CallbackContext context)
+    {
+        cursorController.inputVector = context.ReadValue<Vector2>();
     }
 
 }

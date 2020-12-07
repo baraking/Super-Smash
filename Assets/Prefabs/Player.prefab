@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 7630022168596263685}
   - component: {fileID: 7630022168596263683}
   - component: {fileID: 7630022168596263684}
+  - component: {fileID: 4315246820001619585}
   m_Layer: 5
   m_Name: PlayerPointer
   m_TagString: Untagged
@@ -173,6 +174,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4315246820001619585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7630022168596263686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181c4d2956d0b564fad87c6cf32b6592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputVector: {x: 0, y: 0}
 --- !u!1 &7630022168748199234
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,6 +197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7630022168748199233}
   - component: {fileID: 7630022168748199232}
+  - component: {fileID: 7996580986689329566}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -220,4 +235,53 @@ MonoBehaviour:
   playerIndex: 0
   playerColor: {r: 1, g: 0, b: 0, a: 1}
   isPlayerActivated: 0
+  isPlayerReady: 0
   cursor: {fileID: 7630022168596263684}
+  cursorController: {fileID: 0}
+  cursorLocation: {x: 0, y: 0}
+--- !u!114 &7996580986689329566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7630022168748199234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 6c81b6d044f93f64f88ec4faab3abf6b,
+    type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7630022168748199232}
+        m_MethodName: MenuMovement
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 9de54b86-47ce-4c83-8ec7-5fd9498de751
+    m_ActionName: PlayerMovement/CursorMovement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: PlayerMovement
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
