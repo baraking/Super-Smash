@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEngine.InputSystem.InputAction;
+using UnityEngine.InputSystem;
+//using static UnityEngine.InputSystem.InputAction;
 
 public class Player : MonoBehaviour
 {
@@ -20,10 +21,24 @@ public class Player : MonoBehaviour
 
     public Vector2 cursorLocation;
 
+    //public PlayerControls controls;
+
+    public InputAction wasd;
+
     private void Awake()
     {
+        //controls = new PlayerControls();
         cursor.color = playerColor;
         cursorController = cursor.GetComponent<CursorController>();
+    }
+
+    private void Update()
+    {
+        //cursorLocation=controls.Gameplay.Move.ReadValue<Vector2>();
+        cursorLocation = wasd.ReadValue<Vector2>();
+        cursorController.inputVector = wasd.ReadValue<Vector2>();
+        Debug.Log(wasd.ReadValue<Vector2>().ToString());
+        print(cursorLocation);
     }
 
     public void UpdatePlayerColor()
@@ -31,9 +46,26 @@ public class Player : MonoBehaviour
         cursor.color = playerColor;
     }
 
-    public void MenuMovement(CallbackContext context)
+    public void Button_1()
+    {
+        print("Button_1");
+    }
+
+    /*public void MenuMovement(CallbackContext context)
     {
         cursorController.inputVector = context.ReadValue<Vector2>();
+    }*/
+
+    public void OnEnable()
+    {
+        //controls.Gameplay.Enable();
+        wasd.Enable();
+    }
+
+    public void OnDisable()
+    {
+        //controls.Gameplay.Disable();
+        wasd.Disable();
     }
 
 }

@@ -197,7 +197,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7630022168748199233}
   - component: {fileID: 7630022168748199232}
-  - component: {fileID: 7996580986689329566}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -239,49 +238,99 @@ MonoBehaviour:
   cursor: {fileID: 7630022168596263684}
   cursorController: {fileID: 0}
   cursorLocation: {x: 0, y: 0}
---- !u!114 &7996580986689329566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7630022168748199234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 6c81b6d044f93f64f88ec4faab3abf6b,
-    type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7630022168748199232}
-        m_MethodName: MenuMovement
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 9de54b86-47ce-4c83-8ec7-5fd9498de751
-    m_ActionName: PlayerMovement/CursorMovement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: PlayerMovement
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  wasd:
+    m_Name: Wasd
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 83c5a9da-0be1-453c-8c49-aabab493193e
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: 61d5cc82-957b-40aa-ac6c-8080e82bb9a5
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Wasd
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 5a9e5cab-d902-4e39-8ec0-34e20b6785b4
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Wasd
+      m_Flags: 8
+    - m_Name: down
+      m_Id: f312ab1e-899f-4d41-a1ba-356bf5cf97b9
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Wasd
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 8ac177e4-e6c1-4555-8c08-5bec59b6f095
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Wasd
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 6d9c2ef4-75b2-4fca-8d62-afb8c76b4362
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Wasd
+      m_Flags: 8
+    - m_Name: 2D Vector
+      m_Id: e352fc6a-1fcc-49ea-8013-958c4b6144b9
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Wasd
+      m_Flags: 4
+    - m_Name: up
+      m_Id: e4b54283-4753-4b13-a2ca-a92510fc55f6
+      m_Path: <Gamepad>/dpad/up
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Wasd
+      m_Flags: 8
+    - m_Name: down
+      m_Id: b95b2520-678b-404f-90aa-29fd9ace0c84
+      m_Path: <Gamepad>/dpad/down
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Wasd
+      m_Flags: 8
+    - m_Name: left
+      m_Id: a992afba-4e4d-4d49-8cc4-0961e0c8514a
+      m_Path: <Gamepad>/dpad/left
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Wasd
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 37e3ecee-3247-4ec0-8a97-3ae61fdfbc4f
+      m_Path: <Gamepad>/dpad/right
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Wasd
+      m_Flags: 8
+    - m_Name: 
+      m_Id: cfb5022c-a4e7-4541-a6dd-1bd731c4e1b9
+      m_Path: <Gamepad>/leftStick
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Wasd
+      m_Flags: 0

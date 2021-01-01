@@ -2,14 +2,22 @@
     "name": "PlayerControls",
     "maps": [
         {
-            "name": "PlayerMovement",
-            "id": "5652b431-78f5-467f-802f-ca6b72040c56",
+            "name": "Gameplay",
+            "id": "12243914-191a-4f85-8f64-afa824932e27",
             "actions": [
                 {
-                    "name": "CursorMovement",
+                    "name": "Button_1",
                     "type": "Button",
-                    "id": "9de54b86-47ce-4c83-8ec7-5fd9498de751",
+                    "id": "2d8cb472-1ad3-4cf6-a18d-a1db7adc3392",
                     "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Move",
+                    "type": "PassThrough",
+                    "id": "294de496-ae12-47e1-a572-944743df1d69",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 }
@@ -17,69 +25,58 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "64bba3a2-26c9-48b3-aa5a-e4449761daf6",
-                    "path": "<Gamepad>/leftStick/left",
+                    "id": "c0af1a6b-40d5-4b62-8ecd-f1c2ed021ab0",
+                    "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "CursorMovement",
+                    "action": "Button_1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "WASD",
-                    "id": "1bc90d3f-00b3-47ea-85fd-673e91e82f3b",
-                    "path": "2DVector",
+                    "name": "",
+                    "id": "b0cc2d5c-8323-4b64-98d4-85185fc38b1a",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "CursorMovement",
-                    "isComposite": true,
+                    "action": "Button_1",
+                    "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "adc416e8-9323-40ff-861a-171d256f1848",
-                    "path": "<Keyboard>/w",
+                    "name": "",
+                    "id": "d222e03e-2931-41d0-b950-56c2bb4a4368",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "CursorMovement",
+                    "action": "Button_1",
                     "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 },
                 {
-                    "name": "down",
-                    "id": "d6f5c1e5-00c9-47b7-9865-1395eb17e02b",
-                    "path": "<Keyboard>/s",
+                    "name": "",
+                    "id": "a3704ddc-16e3-4d5a-a7f0-45a3e6e98d25",
+                    "path": "<XInputController>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "CursorMovement",
+                    "action": "Button_1",
                     "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 },
                 {
-                    "name": "left",
-                    "id": "f47ac9ca-bda2-4733-a8a8-93946f8db05f",
-                    "path": "<Keyboard>/a",
+                    "name": "",
+                    "id": "13f79ff9-3fa6-4bcc-8218-33f380e01182",
+                    "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "CursorMovement",
+                    "action": "Move",
                     "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "94198686-f922-4573-97d7-125f708b6f5c",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CursorMovement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 }
             ]
         }
